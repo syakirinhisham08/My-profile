@@ -1,0 +1,198 @@
+/* 1. Design the body */
+body {
+  background-color: #f9f9fb; /* Light grey/blue background */
+  font-family: 'Open Sans', sans-serif; /* Default font */
+  color: #333333; /* Dark grey text (better than pure black) */
+  font-size: 18px;
+  line-height: 1.6; /* Makes paragraphs easier to read */
+  margin: 0;
+  padding: 40px;
+}
+
+/* 2. Design headers h1, h2, h3 */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #7f8c8d; /* Slightly lighter for sub-headers */
+}
+
+/* 3. Design links <a> */
+a {
+  color: #3498db; /* A nice blue */
+  text-decoration: none; /* Removes the default underline */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+a:hover {
+  color: #2980b9; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Pro tip: Center your content */
+header, section, footer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  width: 175px;        /* Adjust this number to make it bigger or smaller */
+  height: 175px;       /* Keep width and height the same for a perfect circle */
+  border-radius: 50%;  /* Makes it round */
+  object-fit: cover;   /* CRITICAL: Prevents stretching if your photo isn't a square */
+}
+/* CLASS: Reuse this for any white card on your site */
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+}
+
+/* CLASS: Make any image a circle */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* ID: Specific style just for your profile photo */
+#profile-pic {
+  width: 100px;
+  border: 3px solid #EDEDED;
+}
+
+/* DESCENDANT SELECTOR: Only style links inside the list-inline class */
+.list-inline li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* --- Standard Desktop Style (already in your file) --- */
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Media Queries (The "Responsive" Rules) --- */
+
+/* 1. For tablets or small laptops */
+@media (max-width: 960px) {
+  .container {
+    width: 600px;
+  }
+}
+
+/* 2. For smaller tablets */
+@media (max-width: 720px) {
+  .container {
+    width: 400px;
+  }
+}
+
+/* 3. For smartphones (The most important one!) */
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 90%; /* It will always leave 5% space on each side */
+  }
+}
+
+/* The Background of the whole page */
+body {
+  background-color: #F7F9FB; /* Light grey/blue background */
+  margin: 0;
+}
+
+/* The invisible box that centers everything */
+.container {
+  width: 700px;
+  margin: 40px auto; /* 40px top/bottom, auto centers it */
+}
+
+/* The actual white floating cards */
+.card-white {
+  background-color: white;
+  padding: 40px;
+  margin-bottom: 20px; /* Space between cards */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Optional: Add a hover effect to make it interactive */
+.card-white:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* --- 1. Reusable Design Classes (The "Lego" Bricks) --- */
+
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+/* --- 2. Component Styles --- */
+
+/* The Button */
+.btn-blue {
+  background-color: #6D5DFD;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 4px;
+  display: inline-block; /* Essential for padding to work on <a> */
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-blue:hover {
+  background-color: #4B3BC9;
+  color: white;
+  text-decoration: none;
+}
+
+/* The Inline List */
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+/* --- 3. Unique Adjustments (IDs) --- */
+
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
